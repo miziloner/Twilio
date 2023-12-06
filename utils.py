@@ -63,9 +63,9 @@ def send_message(TWILIO_ACCOUNT_SID,TWILIO_AUTH_TOKEN,input_date,df,query):
 
     message = client.messages \
                     .create(
-                        body='\nHola miaw miaw 🐱❤️! \n\n\n El pronostico para el dia de hoy '+ input_date +' en ' + query +' es : \n\n\n ' + str(df),
+                        body='\nHola ! \n\n\n El pronostico para el dia de hoy '+ input_date +' en ' + query +' es : \n\n\n ' + str(df),
                         from_=PHONE_NUMBER,
-                        to='+5215535690054'
+                        to='+xxxxxxx'
                     )
 
     return message.sid
